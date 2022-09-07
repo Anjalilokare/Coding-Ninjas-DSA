@@ -1,0 +1,62 @@
+public class Node<T>
+{
+  T data;
+  Node<T> next;
+  
+  Node(T data)
+  {
+      this.data = data;
+      next = null; // Default value of any reference in an object is Null so we can skip this step.
+  }
+}
+
+//This code will create and print linked list
+
+Class BuildPrintlist
+{
+    public static Node<Integer> createlinkedlist(Node<Integer> head)
+    {
+      Node<Integer> n1 = new Node<Integer>(10);
+      Node<Integer> n2 = new Node<Integer>(20);
+      Node<Integer> n3 = new Node<Integer>(30);
+      Node<Integer> n4 = new Node<Integer>(40);
+      n1.next = n2;
+      n2.next = n3;
+      n3.next = n4;
+      //next of n4 node will be by default null so no need to write
+      
+      return n1;
+    }
+    
+    
+    //This print fun will move head to the next element and will not able to find original head
+    public static void print1(Node<Integer> head)
+    {
+      while(head != null)
+      {
+        System.out.println(head.data);
+        head = head.next;
+      }
+    }
+    
+    //This print fun will print element without moving head
+    public static void print2(Node<Integer> head)
+    {
+      Node<Integer> temp = head;
+      while(temp!=null)
+      {
+        System.out.println(temp.data);
+        temp = temp.next;
+      }
+      
+    }
+    
+    
+    public static void main(String args[])
+    {
+      Node<Integer> head = createlinkedlist();
+      print1(head);
+      print2(head);
+    }
+    
+}
