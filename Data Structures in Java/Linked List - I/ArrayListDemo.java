@@ -21,6 +21,9 @@ public class ArrayListDemo {
 		{
 			System.out.println(i);
 		}
+		
+		System.out.println("Size = "+arr.size());
+        	System.out.println("Get element of index 1 : "+arr.get(1));
 	}
 }
 
@@ -34,3 +37,7 @@ OutPut:
 80
 20
 30
+Size = 4
+Get element of index 1 : 80
+	
+	
