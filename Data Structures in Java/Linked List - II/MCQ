@@ -1,1 +1,108 @@
+Q1. What does the following function do?
+void fun(Node head)
+{
+  if(head == null)
+    return;
 
+   fun(head.next);
+   System.out.print( head.data);
+}
+
+Options:
+a. Print all Nodes of Linked List
+b. Print all Nodes of Linked List in reverse order
+c. Print alternate Nodes of Linked list
+d. Print alternate Nodes of Linked list in reverse order
+
+Answer: b. Print all Nodes of Linked List in reverse order
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q2. What will be the correct output of the code, If the linked list is 1->2->3->4->5->6 and start stores the address of node 1.
+void fun(Node start)
+{
+  if(start == null)
+    return;
+  System.out.printf( start.data); 
+
+  if(start.next != null )
+    fun(start.next.next);
+  System.out.printf(start.data);
+}
+
+Options:
+a. 1 3 5
+b. 1 2 4
+c. 1 2 4 4 2 1
+d. 1 3 5 5 3 1
+e. Error
+
+Answer: d. 1 3 5 5 3 1
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q3. In doubly linked lists, traversal can be done in ?
+Options:
+a. Only forward direction
+b. Only reverse direction
+c. Both directions
+d. None of the above
+
+Answer: c. Both directions
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q4. Given an unsorted doubly Linked List, suppose you have references (or pointer) to its head and tail nodes, which of the following operation can be implemented in O(1) time ?
+i) Insertion at the front of the linked list
+ii) Insertion at the end of the linked list
+iii) Deletion of the last node of the linked list
+iv) Deletion of the front node of the linked list
+
+Answer: I,II, III and IV
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q5. Given an unsorted circular linked list, suppose you have reference (or pointer) to its head node only, which of the following operation can be implemented in O(1) time?
+i) Insertion at the front of the linked list
+ii) Insertion at the end of the linked list
+iii) Deletion of the last node of the linked list
+iv) Deletion of the front node of the linked list
+
+Answer: None
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q6. What are the time complexities of finding 6th element from beginning and 6th element from end in a singly linked list? Let n be the number of nodes in linked list, you may assume that n > 7.
+Options:
+a. O(1) and O(n)
+b. O(n) and O(n)
+c. O(1) and O(1)
+d. O(n) and O(1)
+
+Answer: a. O(1) and O(n)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q7. The concatenation of two lists is to be performed in O(1) time. Which of the following implementations of a list should be used?
+Options:
+a. Singly Linked List
+b. Doubly Linked List
+c. Circular Doubly Linked List
+d. Circular Linked List
+
+Answer: c. Circular Doubly Linked List
+Solution Description
+Singly-linked list cannot be answer because we cannot find last element of a singly linked list in O(1) time.
+Doubly linked list and Circular Linked List cannot also not be answer because of the same reason as singly linked list.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q8. Given an unsorted circular doubly linked list, suppose you have reference (or pointer) to its head node only, which of the following operation can be implemented in O(1) time?
+i) Insertion at the front of the linked list
+ii) Insertion at the end of the linked list
+iii) Deletion of the last node of the linked list
+iv) Deletion of the front node of the linked list
+
+Answer: I,II,III and IV
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
