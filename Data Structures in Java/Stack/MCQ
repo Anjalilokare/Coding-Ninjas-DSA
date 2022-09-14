@@ -1,0 +1,225 @@
+Q1. Suppose we have 10 chairs(numbered 1 to 10 from top to bottom) placed on top of each other,
+now we remove the top 5 chairs and from the remaining 5 ,we again remove 2 chairs and place the previous 5 chairs back.
+Which numbered chair is at 6th position from the bottom?
+
+a. 2
+b. 3
+c. 6
+d. 8
+
+Answer : b. 3
+The removed chairs are number 6 and 7.
+Now the seven chairs are in order 1 2 3 4 5 8 9 10(from top to bottom).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+Q2. What method is used in implementation of stacks?
+Answer: Last in First out
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q3. Given an empty Stack and we perform following functions on the stack:
+1. push(5)
+2. push(3)
+3. push(4)
+4. pop()
+5 push(2)
+What is the size of stack now?
+
+Answer: 3
+The final stack is 5 3 2.(2 is at the top)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q4. What would be the sum of elements of Stack after performing following functions:
+1. push(5)
+2. push(3)
+3. push(4)
+4. pop()
+5. push(2)
+
+Answer: 10
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q5. What should be the return type of size function in stack?
+Answer: int
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q6. Which of the following statement(s) about stack data structure is/are NOT correct?
+a. Stack data structure can be implemented using linked list
+b. New node can only be added at the top of the stack
+c. Stack is the FIFO data structure 
+d. New node can be added at both ends 
+
+Answer: c&d
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q7. Which of the following operation take worst case i.e. linear time (O(n)) in the array implementation of stack?
+a. Push
+b. Pop
+c. IsEmpty
+d. None
+
+Answer:  d. None
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q8. What would be the output for the following functions if the size of array used in stack is 5 ?
+1. push(5)
+2. push(4)
+3. push(3)
+4. push (2)
+5. pop()
+6. push(6)
+7. push(8)
+8. push(9)
+9. print(size())  //to print the size of stack
+
+Option:
+a. 6
+b. 5
+c. StackFullException at line 8
+d. StackFullException at line 7
+
+Answer:  c. StackFullException at line 8
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q9. What should be the sequence of push and pop to get the following output (pop means deleting and printing the deleted element) :
+5 4 6 
+a. push(4) push(5) pop pop push(6) pop 
+b. push(6) push(4) push(5) pop pop pop 
+c. push(4) push(5) push(6) pop pop pop
+d. push(5) pop push(4) pop push(6) pop 
+
+Answer:  a,b,d
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q10. What would be the output for the following functions (pop and size means printing also).
+Note: No StackFullException occurs.
+
+push(1) 
+push(2)
+push(3)
+size()
+pop
+push(8)
+pop
+pop
+pop 
+
+Options:
+a. 3 8 3 2 1
+b. 2 3 8 2 1
+c. 3 3 8 2 1
+d. 4 8 3 2 1
+
+Answer:  c. 3 3 8 2 1
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q11. If initially the size of array of stack is 3,and we need to input 34 elements. How many times the doublecapacity function would be called?
+Answer: 4
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q12. What is the time complexity of doublecapacity function of stack?
+(n is the size of previous array).
+a. O(n)
+b. O(1)
+c. O(log(n))
+d. O(n^2)
+
+Answer:  a. O(n)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q13. Which of the following is true about linked list implementation of stack?
+(A) In push operation, if new nodes are inserted at the beginning of linked list, then in pop operation, nodes must be removed from end.
+(B) In push operation, if new nodes are inserted at the end, then in pop operation, nodes must be removed from the beginning.
+
+Answer:  none
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q14. What would be the time complexity of the push and pop operations of the stack implemented using linked list (Assuming stack is implemented efficiently)?
+a. O(1) for insertion and O(n) for deletion
+b. O(1) for insertion and O(1) for deletion
+c. O(n) for insertion and O(n) for deletion
+d. O(n) for insertion and O(1) for deletion
+
+Answer:  b. O(1) for insertion and O(1) for deletion
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q15. Consider the following pseudo-code that uses a Stack:
+declare a stack of characters
+while ( there are more characters in the word to read )
+{
+   read a character
+   push the character on the stack
+}
+while ( the stack is not empty )
+{
+  pop a character off the stack
+  write the character to the screen
+}
+What will be the output for "codingninjas"?
+
+Answer:  sajningnidoc
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q16. What would be the output of the following code?
+import java.util.Stack;
+class Test {
+    public static void main (String[] args) {
+        Stack<Integer> stack=new Stack<Integer>();
+        stack.push(5);
+        stack.push(10);
+        stack.push(15);
+        System.out.print(stack.pop()+stack.size());
+    }
+}
+
+Answer:  17
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q17. What would be the output of the following code?
+import java.util.Stack;
+class Test {
+    public static void main (String[] args) {
+        Stack<Integer> stack=new Stack<Integer>();
+        for(int i=0;i<10;i++)
+        {
+            stack.push(i*2);
+        }
+        System.out.print(stack.peek());
+    }
+}
+
+Answer: 18
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q18. What would be the output of the following code?
+import java.util.Stack;
+class Test {
+    public static void main (String[] args) {
+        Stack<Integer> stack=new Stack<Integer>();
+        while(stack.isEmpty())
+        {
+            stack.push(10);
+        }
+        System.out.print(stack.pop()+" "+stack.size());
+    }
+}
+
+Answer:  10 0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
