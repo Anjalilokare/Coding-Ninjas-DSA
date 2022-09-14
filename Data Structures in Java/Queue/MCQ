@@ -1,1 +1,47 @@
+Q1. A queue is a ?
+Options:
+a. FIFO (First In First Out) list
+b. LIFO (Last In First Out) list
+c. Ordered array
+d. Linear tree
 
+Answer: a. FIFO (First In First Out) list
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q2. If the elements “p”, “q”, “r” and “s” are placed in a queue and are deleted one at a time, in what order will they be removed?
+Options:
+a. srqp
+b. pqrs
+c. srpq
+d. qrsp
+
+Answer : b. pqrs
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q3. Consider the following pseudo code. Assume that IntQueue is an integer queue. What does the function fun do?
+void fun(int n)
+{
+    IntQueue q = new IntQueue();
+    q.enqueue(0);
+    q.enqueue(1);
+    for (int i = 0; i < n; i++)
+    {
+        int a = q.dequeue();
+        int b = q.dequeue();
+        q.enqueue(b);
+        q.enqueue(a + b);
+        System.out.print(a);
+    }
+}
+
+Options:
+a. Print numbers 0 to n-1
+b. Print numbers n-1 to 0
+c. Print first n fibonacci numbers
+d. Print first n fibonacci numbers in reverse
+
+Answer: c. Print first n fibonacci numbers
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
